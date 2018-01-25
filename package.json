@@ -1,0 +1,54 @@
+{
+  "name": "saplings",
+  "version": "1.0.0",
+  "description": "Tiny rule engine for chunks of logic that benefit from explanation",
+  "main": "dist/index.js",
+  "scripts": {
+    "babel": "rm -rf dist/ && babel src --out-dir dist",
+    "test": "yarn babel && mocha test",
+    "lint": "eslint '{src/*.js,src/**/*.js}'",
+    "lint-staged": "lint-staged",
+    "precommit": "yarn run lint-staged",
+    "prepush": "yarn test",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrazyLabs/saplings.git"
+  },
+  "keywords": [
+    "Rules"
+  ],
+  "author": "b3ngineer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrazyLabs/saplings/issues"
+  },
+  "homepage": "https://github.com/KrazyLabs/saplings#readme",
+  "dependencies": {
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-node6": "^11.0.0",
+    "chai": "^4.0.2",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-flowtype": "^2.33.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.48.0",
+    "husky": "^0.13.4",
+    "lint-staged": "^3.4.2",
+    "mocha": "^3.4.2",
+    "mockery": "^2.1.0",
+    "prettier": "^1.3.1"
+  }
+}
