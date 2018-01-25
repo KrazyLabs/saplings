@@ -1,5 +1,5 @@
 {
-  "name": "sprout",
+  "name": "saplings",
   "version": "1.0.0",
   "description": "Tiny rule engine for chunks of logic that benefit from explanation",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KrazyLabs/sprout.git"
+    "url": "git+https://github.com/KrazyLabs/saplings.git"
   },
   "keywords": [
     "Rules"
@@ -22,9 +22,9 @@
   "author": "b3ngineer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KrazyLabs/sprout/issues"
+    "url": "https://github.com/KrazyLabs/saplings/issues"
   },
-  "homepage": "https://github.com/KrazyLabs/sprout#readme",
+  "homepage": "https://github.com/KrazyLabs/saplings#readme",
   "dependencies": {
     "uuid": "^3.2.1"
   },
